@@ -1,5 +1,4 @@
 import scapy.all as scapy
-import re
 import socket
 import time
 import sys
@@ -75,16 +74,16 @@ def perform_arp_scan():
 
 # Function to display the ASCII art welcome message
 def display_ascii_art():
-    ascii_art = pyfiglet.figlet_format("Device Scanner")
+    ascii_art = pyfiglet.figlet_format("ARP Scanner")
     print(ascii_art)
-    print("Welcome to the Device Scanner Program. Please choose an option below.\n")
+    print("Welcome to the ARP Scanner Program. Please choose an option below.\n")
 
 # Main menu to keep the program running
 def main_menu():
     while True:
         display_ascii_art()  # Display ASCII art for the title
         print("\033[1;32m===================================")  # Green color for menu borders
-        print("1. Perform A Scan")
+        print("1. Perform ARP Scan")
         print("2. Exit")
         print("===================================")
         print("\033[0m")  # Reset color to default
